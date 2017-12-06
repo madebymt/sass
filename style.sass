@@ -1,0 +1,35 @@
+$black: #333
+$pale: #d2e1dd
+$pink: #c69
+$blue: #036
+$font-stack:  'Andale mono'
+$font-size: 50px
+
+// mixin
+=circlething($rad, $height, $width,$bg,$color)
+ -webkit-border-radius: $rad
+ -moz-border-radius:    $rad
+ -ms-border-radius:     $rad
+ border-radius:         $rad
+
+ height: $height
+ width:  $width
+
+ line-height: $height
+ text-align:   center
+
+ background: $bg
+ color:      $color
+
+ margin: 0 auto
+// style
+
+
+body
+ background-color: red
+
+h2
+  color: white
+  font-size: $font-size
+  font-family: $font-stack
+  +circlething(100%,200px,200px, $blue, white)
